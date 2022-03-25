@@ -55,4 +55,4 @@ web-build/
 dist/
 
 .env
-/coverage
+coverage/
