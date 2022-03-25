@@ -11,5 +11,13 @@ module.exports = {
     "@testing-library/jest-native/extend-expect",
     "jest-styled-components"
   ],
-  setupFiles: ["<rootDir>/jestSetupFile.js"]
+  setupFiles: ["<rootDir>/jestSetupFile.js"],
+  collectCoverage: true,
+  collectCoverageFrom: [
+    "src/**/*.tsx",
+    "!src/**/*.spec.tsx",
+  ],
+  coverageReporters: [
+    'lcov'
+  ]
 }
